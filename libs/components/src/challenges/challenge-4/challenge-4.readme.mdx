@@ -1,0 +1,27 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Challenges/Challenge 4/README" />
+
+# Challenge 4: Alert Web Component Closable
+
+**Description:** Create an alert web component that changes its top border color based on the variant and can be closable.
+
+**Task:** Create a custom element `<challenge-4>` that displays an alert message with the following features:
+
+- **Variants**: primary, success, neutral, warning, danger
+- **Slots:** A default slot for content and an optional title slot for a bold title above the content
+- **Closable**: A property to determine if the alert can be closed, if closed is set add a close button to the alert that hides the alert when clicked
+- **Open**: A reflective property to determine if the alert is open
+
+**Requirements:**
+
+1. Use Lit to define the custom element.
+2. Use a default slot for the alert content, if no slotted content has been provided show the default message.
+3. Use an optional title slot for a bold title above the content.
+4. The top border color should change based on the variant property.
+5. The alert should have a open property to reflects it current status.
+6. The alert should have a closable property to determine if a close button is shown.
+7. The alert should be removed from the DOM when closed.
+8. The alert should have show and hide methods to set their open status.
+9. The alert should emit a custom event after it has closed.
+10. **(Extra):** make the closable button accessible (keyboard, focus state, aria labels etc..)

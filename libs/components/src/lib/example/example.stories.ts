@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components';
 import { html } from 'lit';
-import { ExampleComponent } from './example-component';
+import { ExampleComponent } from './example.component';
 
 const component = new ExampleComponent();
 
