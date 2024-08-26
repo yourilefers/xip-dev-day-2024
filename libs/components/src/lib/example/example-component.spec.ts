@@ -1,7 +1,7 @@
-import { Component } from './example-component';
+import { ExampleComponent } from './example-component';
 
 describe('component', () => {
   it('should work', () => {
-    expect(Component).toEqual('Component');
+    expect(ExampleComponent).toEqual('Component');
   });
 });

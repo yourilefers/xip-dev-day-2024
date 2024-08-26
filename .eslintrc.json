@@ -23,12 +23,34 @@
     },
     {
       "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:@nx/typescript"],
-      "rules": {}
+      "extends": [
+        "plugin:@nx/typescript",
+        "plugin:lit/recommended",
+        "@xip-online-applications/eslint-config/typescript"
+      ],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/array-type": [
+          "error",
+          {
+            "default": "generic"
+          }
+        ],
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "packageDir": "./"
+          }
+        ],
+        "@typescript-eslint/no-extra-semi": "error"
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nx/javascript"],
+      "extends": [
+        "plugin:@nx/javascript",
+        "@xip-online-applications/eslint-config"
+      ],
       "rules": {}
     },
     {
@@ -38,5 +60,6 @@
       },
       "rules": {}
     }
-  ]
+  ],
+  "extends": ["plugin:storybook/recommended"]
 }

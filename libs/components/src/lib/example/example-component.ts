@@ -1,15 +1,15 @@
-import {LitElement, html} from 'lit';
-import {customElement, property} from 'lit/decorators.js';
+import { LitElement, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 import { styles } from './example-component.styles';
 
 @customElement('example-component')
 export class ExampleComponent extends LitElement {
   static override styles = styles;
 
-  @property({type: String})
+  @property({ type: String })
   hint: string = 'Some hint';
 
-  @property({type: Number})
+  @property({ type: Number })
   count: number = 0;
 
   override render() {
