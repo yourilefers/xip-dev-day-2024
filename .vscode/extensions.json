@@ -3,6 +3,10 @@
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
-    "ms-playwright.playwright"
+    "stylelint.vscode-stylelint",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "ms-playwright.playwright",
+    "unifiedjs.vscode-mdx"
   ]
 }
