@@ -1,0 +1,11 @@
+md-list {
+  --md-list-container-color: transparent;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  flex-direction: column;
+  gap: 8px;
+}

@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: var(--a-panes-pane-height);
+}
+
+.spacer {
+  flex: 1;
+}
+
+blockquote {
+  border-radius: var(--a-panes-gap);
+  color: white;
+  padding: calc(var(--a-panes-gap) * 2);
+  margin: 0;
+
+  &[state='available'] {
+    background-color: #2bdc5e;
+  }
+
+  &[state='reserved'] {
+    background-color: #5655a8;
+  }
+}

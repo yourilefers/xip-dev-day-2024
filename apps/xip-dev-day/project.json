@@ -21,7 +21,7 @@
             "input": "apps/xip-dev-day/public"
           }
         ],
-        "styles": ["apps/xip-dev-day/src/styles.css"],
+        "styles": ["apps/xip-dev-day/src/styles.scss"],
         "scripts": []
       },
       "configurations": {

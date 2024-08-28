@@ -1,0 +1,21 @@
+<div class="booking">
+  <div class="md-typescale-title-medium">
+    <span class="organiser">{{ booking.organiser }}</span>
+  </div>
+  <div class="md-typescale-headline-medium">
+    <span class="start">{{ booking.start | date: 'HH:mm' }}</span>
+    <span> - </span>
+    <span class="end">{{ booking.end | date: 'HH:mm' }}</span>
+  </div>
+  <div class="md-typescale-headline-small">
+    <span class="name">{{ booking.name }}</span>
+  </div>
+  <div class="md-typescale-body-medium">
+    <p>{{ booking.description }}</p>
+  </div>
+  <div>
+    <md-filled-button (click)="cancelBooking()">Cancel</md-filled-button>
+  </div>
+
+  <md-elevation></md-elevation>
+</div>

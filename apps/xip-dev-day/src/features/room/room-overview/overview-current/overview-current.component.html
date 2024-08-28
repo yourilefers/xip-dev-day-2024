@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <h1 aria-label="Current room" class="md-typescale-headline-large-prominent">
+    {{ (room$ | async)?.name }}
+  </h1>
+
+  @if (currentReservation$ | async; as booking) {
+    <app-overview-booking [booking]="booking" (cancel)="cancelBooking($event)" />
+  }
+
+  <div class="spacer"></div>
+
+  @if (isReserved$ | async) {
+    <blockquote state="reserved">
+      Room is reserved
+    </blockquote>
+  } @else {
+    <blockquote state="available">
+      Room is available
+
+      <md-elevated-button (click)="reserveRoom()">
+        Reserve now
+      </md-elevated-button>
+    </blockquote>
+  }
+</div>

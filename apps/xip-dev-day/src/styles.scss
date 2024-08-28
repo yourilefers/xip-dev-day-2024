@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  font-family: "Roboto", sans-serif;
+  --md-ref-typeface-brand: 'Roboto';
+  --md-ref-typeface-plain: system-ui;
+}
+
+body, html {
+  margin: 0;
+}
+
+:root {
+  --a-top-bar-height: 64px;
+
+  --a-panes-gap: 16px;
+  --a-panes-margin: var(--a-panes-gap);
+  --a-panes-pane-padding-block: calc(var(--a-panes-gap) * 2);
+  --a-panes-pane-padding-inline: calc(var(--a-panes-gap) * 1.5);
+  --a-panes-pane-height: calc(100dvh - var(--a-top-bar-height) - var(--a-panes-gap) - (var(--a-panes-pane-padding-block) * 3));
+}

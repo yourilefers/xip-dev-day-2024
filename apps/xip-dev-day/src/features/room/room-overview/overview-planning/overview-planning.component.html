@@ -1,0 +1,9 @@
+<ul>
+  @for (booking of (planning$ | async); track booking.id) {
+    <app-overview-booking [booking]="booking" (cancel)="cancelBooking($event)" />
+  } @empty {
+    <md-list-item>
+      <div class="empty">No bookings</div>
+    </md-list-item>
+  }
+</ul>
